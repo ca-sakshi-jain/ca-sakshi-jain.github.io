@@ -1,8 +1,8 @@
-## 🧭 The FP&A Journal of CA: Navigate Finance & Strategy with ME
+## 🧭 The Journal of a CA: Navigate Finance & Strategy with ME
 
 **by [Sakshi Jain, CA](https://www.linkedin.com/in/casakshijain907/)**
 
-This repository powers my personal blog and digital garden. It is a space dedicated to documenting the transition from core accounting to the strategic world of **Financial Planning & Analysis (FP&A)**.
+This site hosts my digital garden and personal blog. It is a dedicated space documenting my journey and insights as a **Chartered Accountant**, moving through the rigors of **Audit and Global Financial Reporting**.
 
 ### 🌐 [Visit the Live Site](https://ca-sakshi-jain.github.io)
 
@@ -10,25 +10,17 @@ This repository powers my personal blog and digital garden. It is a space dedica
 
 ### 📖 What is this site about?
 
-This platform is a collection of my thoughts, technical learnings, and professional experiences as a Chartered Accountant. It focuses on the "Why" behind the numbers, moving beyond compliance to drive business value. A mix of long-form articles, technical case studies, and Excel templates. To create a resource for fellow CAs and finance professionals looking to level up their analytical skills.
+This site is a collection of technical deep-dives, professional experiences, and strategic thoughts. It serves as a bridge between **compliance-based accounting** and **forward-looking business strategy**, designed as a resource for finance professionals aiming to evolve their analytical and leadership skills.
 
-**Key Themes:**
+### 🎯 Topics I'm Writing About:
 
-* **The FP&A Pivot:** Real-world experiences of transitioning from traditional CA roles (Audit/Tax) into strategic finance.
-* **Financial Modeling Chronicles:** Practical guides on building driver-based models, scenario planning, and forecasting.
-* **Tech in Finance:** Exploring how Power BI, Tableau, and Advanced Excel are reshaping the role of a modern Finance Partner.
-* **The CA Perspective:** Leveraging the rigor of the CA qualification to solve complex business problems.
+* **The Reporting Bedrock:** Deep dives into **US GAAP, IFRS, and Ind AS**. Navigating the complexities of global accounting standards and technical financial reporting.
+* **Audit & Governance:** Leveraging my 6+ years of experience in auditing to ensure data integrity, internal controls, and robust financial hygiene.
+* **The Leadership Pivot:** Practical guides on building driver-based models, scenario planning, and shifting from "Historical Recording" to "Predictive Forecasting."
+* **CFO Roadmap:** Exploring the soft skills, commercial acumen, and tech-stack mastery required to lead a modern finance function.
 
 ### 👤 About the Author
 
-While the blog focuses on financial knowledge and learning, you can find my specific professional experience, certifications, and project portfolio on my profile page:
+While this blog is a space for sharing knowledge, you can find my specific professional experience, certifications, and project portfolio on my dedicated profile page:
 
-👉 **[View My Professional Profile & CV](https://ca-sakshi-jain.github.io/ca-sakshi-jain/)**
-
----
-
-### 📝 Latest Topics I'm Writing About
-
-* *Transitioning from Reporting to Forecasting: The Mindset Shift.*
-* *Building your first SaaS Revenue Model in Excel.*
-* *Common pitfalls in Variance Analysis and how to avoid them.*
+👉 **[View My Professional Profile & Portfolio](https://ca-sakshi-jain.github.io/ca-sakshi-jain/)**

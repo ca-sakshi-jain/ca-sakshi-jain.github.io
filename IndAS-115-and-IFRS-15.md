@@ -37,9 +37,9 @@ To determine the revenue amount, we use the **Relative Standalone Selling Price 
 
 ### The Scenario Data
 
-**Contract Terms:**  - $50/month for 24 months  
+- **Contract Terms:**  - $50/month for 24 months  
 
-**Total Transaction Price (TTP):**  - $1,200  
+- **Total Transaction Price (TTP):**  - $1,200  
 
 ### The Standalone Reality
 
@@ -50,7 +50,7 @@ To determine the revenue amount, we use the **Relative Standalone Selling Price 
 
 ### Step 1: Determine Total Fair Value (SSP)
 
-{Total SSP} = $800 {Phone} + $600 {Service}) = $1,400
+- {Total SSP} = $800 {Phone} + $600 {Service} = $1,400
 
 ---
 
@@ -59,11 +59,11 @@ To determine the revenue amount, we use the **Relative Standalone Selling Price 
 The customer is receiving a package worth **$1,400** for a price of **$1,200**  
 (a discount of approximately **14.3%**). This discount must be allocated proportionally across all obligations.
 
-**Handset Allocation:**
+- **Handset Allocation:**
 
 ($800\$1,400) * $1,200 = $685.71
 
-**Service Allocation:**
+- **Service Allocation:**
 
 ($600\$1,400) * $1,200 = $514.29
 *(Approx. $21.43/month)*

@@ -1,42 +1,34 @@
-## Hi there 👋 I'm CA Sakshi Jain
+## 🧭 The FP&A Journal of CA: Navigate Finance & Strategy with ME
 
-#### Chartered Accountant (CA) | Pursuing CPA | ACCA DipIFRS | Aspiring FP&A Leader
+**by Sakshi Jain, CA**
 
-I am a finance professional with **6+ years of experience** in accounting, audit, and financial reporting. I am currently pivoting into **Financial Planning & Analysis (FP&A)** to leverage my technical foundation in driving business strategy and data-driven decision-making.
+This repository powers my personal blog and digital garden. It is a space dedicated to documenting the transition from core accounting to the strategic world of **Financial Planning & Analysis (FP&A)**.
 
-### 🔭 I’m currently working on...
+### 🌐 [Visit the Live Site](https://ca-sakshi-jain.github.io)
 
-* **Bridging the gap** between historical financial reporting and predictive forecasting.
-* Developing robust **3-statement financial models** and **driver-based forecasts** for various business units.
-* Managing end-to-end financial compliance while identifying cost-optimization opportunities.
+---
 
-### 🌱 I’m currently learning...
+### 📖 What is this site about?
 
-* **Advanced Financial Modeling:** Moving beyond static spreadsheets to dynamic, scenario-based models.
-* **Data Storytelling:** Mastering **Power BI** and **Tableau** to transform complex numbers into actionable executive insights.
-* **Strategic Business Partnering:** Learning how to collaborate with non-finance teams (Sales/Ops) to improve ROI.
+This platform is a collection of my thoughts, technical learnings, and professional experiences as a Chartered Accountant. It focuses on the "Why" behind the numbers, moving beyond compliance to drive business value. A mix of long-form articles, technical case studies, and Excel templates. To create a resource for fellow CAs and finance professionals looking to level up their analytical skills.
 
-### 📊 My FP&A Toolkit
+**Key Themes:**
 
-| Category | Tools & Skills |
-| --- | --- |
-| **Analysis** | Budgeting, Variance Analysis, NPV/IRR, Scenario Modeling |
-| **Software** | Microsoft Excel (Expert), Currently learning Power Query |
-| **Visualization** | Power BI |
-| **Compliance** | US GAAP, IFRS, Indian Tax Laws, Internal Controls (SOX) |
+* **The FP&A Pivot:** Real-world experiences of transitioning from traditional CA roles (Audit/Tax) into strategic finance.
+* **Financial Modeling Chronicles:** Practical guides on building driver-based models, scenario planning, and forecasting.
+* **Tech in Finance:** Exploring how Power BI, Tableau, and Advanced Excel are reshaping the role of a modern Finance Partner.
+* **The CA Perspective:** Leveraging the rigor of the CA qualification to solve complex business problems.
 
-### 💬 Ask me about...
+### 👤 About the Author
 
-* The transition from **CA to FP&A**.
-* US GAAP vs. IFRS reconciliations.
-* How to build a dynamic P&L from scratch.
+While the blog focuses on financial knowledge and learning, you can find my specific professional experience, certifications, and project portfolio on my profile page:
 
-### 📫 How to reach me:
+👉 **[View My Professional Profile & CV](https://ca-sakshi-jain.github.io/ca-sakshi-jain/)**
 
-* **LinkedIn:** [CA Sakshi Jain](https://www.linkedin.com/in/casakshijain907/)
-* **Email:** [casakshi25@gmail.com](mailto:casakshi25@gmail.com)
-* [📄 View My Professional Resume](https://docs.google.com/document/d/1H78Zm5BeEp2yLerY0pSvKsjGMD9fkpGKnKWgjLQCBqY/edit?usp=sharing)
+---
 
-### ⚡ Fun fact:
+### 📝 Latest Topics I'm Writing About
 
-I believe that every number tells a story; I’m just the person who translates that story from "Accounting" into "Strategy."
+* *Transitioning from Reporting to Forecasting: The Mindset Shift.*
+* *Building your first SaaS Revenue Model in Excel.*
+* *Common pitfalls in Variance Analysis and how to avoid them.*

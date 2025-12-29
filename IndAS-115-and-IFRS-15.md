@@ -37,11 +37,9 @@ To determine the revenue amount, we use the **Relative Standalone Selling Price 
 
 ### The Scenario Data
 
-**Contract Terms:**  
-- $50/month for 24 months  
+**Contract Terms:**  - $50/month for 24 months  
 
-**Total Transaction Price (TTP):**  
-- $1,200  
+**Total Transaction Price (TTP):**  - $1,200  
 
 ### The Standalone Reality
 

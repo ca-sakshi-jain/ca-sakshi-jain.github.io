@@ -27,3 +27,8 @@ This site is a collection of technical deep-dives, professional experiences, and
 While this blog is a space for sharing knowledge, you can find my specific professional experience, certifications, and project portfolio on my dedicated profile page:
 
 👉 **[View My Professional Profile & Portfolio](https://ca-sakshi-jain.github.io/ca-sakshi-jain/)**
+
+## Recent Posts
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) <small>({{ post.date | date: "%b %d, %Y" }})</small>
+{% endfor %}

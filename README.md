@@ -4,8 +4,6 @@
 
 This site hosts my digital garden and personal blog. It is a dedicated space documenting my journey and insights as a **Chartered Accountant**, moving through the rigors of **Audit and Global Financial Reporting**.
 
-### 🌐 [Visit the Live Site](https://ca-sakshi-jain.github.io)
-
 ---
 
 ### 📖 What is this site about?

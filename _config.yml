@@ -1,20 +1,87 @@
-title: "CA Sakshi Jain Blog"
-description: "Insights, guides, and analysis for Indian taxation, accounting, audit, and finance."
-author: "CA Sakshi Jain"
+title: "The Finance & Strategy Journal | CA Sakshi Jain"
+tagline: "Global Financial Reporting • Audit Excellence • Strategic Finance Leadership"
+description: "Professional insights on US GAAP, IFRS, and Ind AS from a practicing Chartered Accountant. Expert guidance for CAs, CPAs, and ACCA professionals navigating global accounting standards and CFO leadership."
+author:
+  name: "CA Sakshi Jain"
+  email: "casakshi25@gmail.com"
+  linkedin: "https://www.linkedin.com/in/casakshijain907/"
+  portfolio: "https://ca-sakshi-jain.github.io/ca-sakshi-jain/"
+  career_start_year: 2019  # Year you started your finance career
+
 url: "https://ca-sakshi-jain.github.io"
+baseurl: ""
 permalink: /:categories/:year/:month/:day/:title/
+timezone: Asia/Kolkata
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# SEO and Social
+lang: en-US
+logo: /assets/images/logo.png
+twitter:
+  username: casakshijain
+  card: summary
+social:
+  name: CA Sakshi Jain
+  links:
+    - https://www.linkedin.com/in/casakshijain907/
+    - https://ca-sakshi-jain.github.io/ca-sakshi-jain/
 
 # SEO plugins built into GitHub Pages
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+
+# SEO defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CA Sakshi Jain"
+      image: /assets/images/default-post.png
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
 
 # Navigation
 nav:
   - title: "Home"
     url: /
+  - title: "Articles"
+    url: /#recent-posts
   - title: "About"
-    url: /ca-sakshi-jain/
+    url: https://ca-sakshi-jain.github.io/ca-sakshi-jain/
   - title: "Contact"
     url: /contact/
+
+# Professional credentials and expertise
+credentials:
+  - "Chartered Accountant (CA), India"
+  - "6+ Years in Audit & Financial Reporting"
+  - "Global Standards: US GAAP, IFRS, Ind AS"
+
+expertise_areas:
+  - "Revenue Recognition (ASC 606, IFRS 15, Ind AS 115)"
+  - "Financial Statement Audit & Internal Controls"
+  - "FP&A and Strategic Financial Planning"
+  - "CFO Readiness & Finance Leadership"
+
+# Feed settings
+feed:
+  excerpt_only: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache

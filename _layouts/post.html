@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+
+      {% if page.author %}
+      <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        by <span itemprop="name">{{ page.author }}</span>
+      </span>
+      {% endif %}
+
+      {% if page.categories %}
+      <span class="post-categories">
+        in {% for category in page.categories %}<a href="{{ '/categories/' | append: category | relative_url }}">{{ category | capitalize }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </span>
+      {% endif %}
+    </div>
+
+    {% if page.excerpt %}
+    <div class="post-excerpt" itemprop="description">
+      {{ page.excerpt }}
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <div class="post-author-bio">
+      <h3>About the Author</h3>
+      {% assign years = 'now' | date: "%Y" | minus: site.author.career_start_year %}
+      <p>
+        Hi! I'm <strong>{{ site.author.name }}</strong>, a Chartered Accountant navigating through {{ years }}+ years in audit,
+        financial reporting, and strategic finance. I write about global accounting standards (US GAAP, IFRS, Ind AS)
+        and share what I'm learning as I transition from compliance work to strategic leadership.
+      </p>
+      <p>
+        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a> |
+        <a href="{{ '/contact/' | relative_url }}">Get in Touch</a>
+      </p>
+    </div>
+
+    <div class="post-share">
+      <h4>Share this article:</h4>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer" class="share-button linkedin">LinkedIn</a>
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="share-button twitter">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Structured Data for Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+    "image": "{{ page.image | default: site.logo | absolute_url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author | default: site.author.name }}",
+      "url": "{{ site.author.portfolio }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    },
+    "keywords": "{{ page.tags | join: ', ' }}"
+  }
+  </script>
+</article>

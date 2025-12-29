@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section about-section">
+        <h3>{{ site.author.name }}</h3>
+        <p class="credentials">
+          {% for credential in site.credentials %}
+          {{ credential }}<br>
+          {% endfor %}
+        </p>
+      </div>
+
+      <div class="footer-section expertise-section">
+        <h3>Areas of Expertise</h3>
+        <ul class="expertise-list">
+          {% for area in site.expertise_areas %}
+          <li>{{ area }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-section connect-section">
+        <h3>Connect</h3>
+        <ul class="social-links">
+          <li><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+          <li><a href="{{ site.author.portfolio }}" target="_blank" rel="noopener noreferrer">Professional Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.
+      </p>
+      <p class="disclaimer">
+        Professional insights and analysis. Not a substitute for professional advice.
+      </p>
+    </div>
+  </div>
+</footer>

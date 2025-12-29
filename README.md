@@ -30,7 +30,4 @@ Looking for my specific professional experience or project case studies?
 👉 **[View My Professional Portfolio](https://ca-sakshi-jain.github.io/ca-sakshi-jain/)**
 
 * **LinkedIn:** [ca-sakshi-jain-907](https://www.linkedin.com/in/casakshijain907/)
-* **Email:** [Your Email Here]
-
----
-*Generated with a focus on Financial Clarity and Strategic Value.*
+* **Email:** [casakshi25@gmail.com](mailto:casakshi25@gmail.com)

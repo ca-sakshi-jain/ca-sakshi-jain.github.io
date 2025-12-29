@@ -3,7 +3,7 @@ layout: default
 title: "CA Sakshi Jain Journal and Blog"
 ---
 
-## 🧭 The Journal of a CA: Navigate Finance & Strategy with ME
+## 🧭 The Journal of a CA: Navigate Finance & Strategy with Me
 
 **by [Sakshi Jain, CA](https://www.linkedin.com/in/casakshijain907/)**
 

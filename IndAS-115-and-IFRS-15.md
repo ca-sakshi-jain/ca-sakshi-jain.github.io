@@ -119,7 +119,7 @@ The actual cash to back those profits may not arrive for another **12–18 month
 
 Standard forecasting models often assume:
 
-Cash = Revenue \times (1 - \text{DSO})
+Cash = Revenue * (1 - Days sales outstanding%)
 
 In a bundled environment, this logic fails. Analysts must model **Billing Schedules** and **Revenue Recognition** as two entirely separate workstreams.
 
@@ -134,6 +134,4 @@ In the modern regulatory environment:
 
 As a finance leader, your value lies in bridging this gap. The **“Free” iPhone** isn’t free—it is a **Contract Asset** that requires careful management, precise modeling, and transparent reporting.
 
----
 
-*Enjoyed this breakdown? Follow for **Day 2 of the CFO Protocol**, where we discuss why your **Bad Debt Provisioning (ECL Model)** might be failing in the current economic climate.*

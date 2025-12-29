@@ -1,0 +1,20 @@
+title: "CA Sakshi Jain Blog"
+description: "Insights, guides, and analysis for Indian taxation, accounting, audit, and finance."
+author: "CA Sakshi Jain"
+url: "https://ca-sakshi-jain.github.io"
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+
+# SEO plugins built into GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/

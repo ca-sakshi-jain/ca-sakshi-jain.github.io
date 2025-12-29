@@ -1,6 +1,6 @@
 ## 🧭 The FP&A Journal of CA: Navigate Finance & Strategy with ME
 
-**by Sakshi Jain, CA**
+**by [Sakshi Jain, CA](https://www.linkedin.com/in/casakshijain907/)**
 
 This repository powers my personal blog and digital garden. It is a space dedicated to documenting the transition from core accounting to the strategic world of **Financial Planning & Analysis (FP&A)**.
 

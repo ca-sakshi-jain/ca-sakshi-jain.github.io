@@ -7,13 +7,12 @@ title: "CA Sakshi Jain Journal and Blog"
 
 **by [Sakshi Jain, CA](https://www.linkedin.com/in/casakshijain907/)**
 
-This site hosts my digital garden and personal blog. It is a dedicated space documenting my journey and insights as a **Chartered Accountant**, moving through the rigors of **Audit and Global Financial Reporting**.
-
 ---
 
 ### 📖 What is this site about?
+This site hosts my digital garden and personal blog. It is a dedicated space documenting my journey and insights as a **Chartered Accountant**, moving through the rigors of **Audit and Global Financial Reporting**.
 
-This site is a collection of technical deep-dives, professional experiences, and strategic thoughts. It serves as a bridge between **compliance-based accounting** and **forward-looking business strategy**, designed as a resource for finance professionals aiming to evolve their analytical and leadership skills.
+This is a collection of technical deep-dives, professional experiences, and strategic thoughts. It serves as a bridge between **compliance-based accounting** and **forward-looking business strategy**, designed as a resource for finance professionals aiming to evolve their analytical and leadership skills.
 
 ### 🎯 Topics I'm Writing About:
 

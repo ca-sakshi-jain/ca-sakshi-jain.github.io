@@ -30,16 +30,13 @@
         <h3>Connect</h3>
         <ul class="social-media-list">
           <li>
-            <a rel="me" href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a>
+            <a rel="me" href="{{ site.author.linkedin }}" target="_blank">Find me on LinkedIn</a>
           </li>
           <li>
-            <a href="mailto:{{ site.author.email }}">{{ site.author.email | escape }}</a>
+            <a href="mailto:{{ site.author.email }}">Drop me an email</a>
           </li>
           <li>
-            <a href="{{ site.author.portfolio }}" target="_blank">Portfolio</a>
-          </li>
-          <li>
-            <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
+            <a href="{{ site.author.portfolio }}" target="_blank">View my portfolio</a>
           </li>
         </ul>
       </div>
@@ -47,7 +44,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views.</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views. • <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></p>
     </div>
   </div>
 </footer>

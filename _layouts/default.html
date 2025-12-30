@@ -3,6 +3,20 @@
   {%- include head.html -%}
   <body>
     {%- include header.html -%}
+
+    {%- assign today = 'now' | date: '%j' | plus: 0 -%}
+    {%- assign quote_index = today | modulo: site.data.quotes.size -%}
+    {%- assign daily_quote = site.data.quotes[quote_index] -%}
+
+    <div class="daily-quote">
+      <div class="wrapper">
+        <blockquote class="quote-content">
+          <p>"{{ daily_quote.text }}"</p>
+          <cite>- {{ daily_quote.author }}</cite>
+        </blockquote>
+      </div>
+    </div>
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}

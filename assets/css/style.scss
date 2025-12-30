@@ -172,6 +172,40 @@ a:hover {
   }
 }
 
+/* ========== Daily Quote ========== */
+
+.daily-quote {
+  background: linear-gradient(135deg, var(--bg-subtle) 0%, #f0f4f8 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: calc(var(--spacing) * 2) 0;
+  margin-bottom: 0;
+}
+
+.quote-content {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: calc(var(--spacing) * 0.5);
+  font-weight: 400;
+}
+
+.quote-content cite {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
 /* ========== Main Content ========== */
 
 .page-content {
@@ -581,6 +615,14 @@ a:hover {
     justify-content: center;
     width: 100%;
   }
+
+  .daily-quote {
+    padding: calc(var(--spacing) * 1.5) 0;
+  }
+
+  .quote-content p {
+    font-size: 0.9375rem;
+  }
 }
 
 /* ========== Print ========== */
@@ -590,7 +632,8 @@ a:hover {
   .site-nav,
   .site-footer,
   .post-share,
-  .post-tags {
+  .post-tags,
+  .daily-quote {
     display: none !important;
   }
 

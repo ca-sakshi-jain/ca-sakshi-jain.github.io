@@ -100,14 +100,16 @@ a:hover {
 }
 
 .site-title {
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
   color: var(--text-primary);
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
+  text-decoration: none;
 }
 
 .site-title:hover {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* Navigation */
@@ -471,30 +473,29 @@ a:hover {
 }
 
 .footer-quote {
-  margin: calc(var(--spacing) * 1.5) 0;
-  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
+  margin: calc(var(--spacing) * 2.5) auto calc(var(--spacing) * 2) auto;
+  padding: calc(var(--spacing) * 1.5) 0 0 0;
   border: none;
-  background: rgba(255, 255, 255, 0.5);
-  border-left: 3px solid var(--accent-color);
-  border-radius: 0 4px 4px 0;
+  border-top: 1px solid var(--border-color);
   font-style: italic;
+  max-width: 90%;
+  text-align: center;
 }
 
 .footer-quote p {
   color: var(--text-secondary);
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin-bottom: calc(var(--spacing) * 0.5);
-  text-align: left;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin-bottom: calc(var(--spacing) * 0.75);
+  font-weight: 400;
 }
 
 .footer-quote cite {
   display: block;
   color: var(--text-muted);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  text-align: right;
 }
 
 .license-notice {
@@ -610,10 +611,15 @@ a:hover {
   }
 
   .footer-quote {
-    padding: calc(var(--spacing) * 0.75) calc(var(--spacing) * 1);
+    max-width: 100%;
+    padding: calc(var(--spacing) * 1.25) 0;
   }
 
   .footer-quote p {
+    font-size: 0.875rem;
+  }
+
+  .footer-quote cite {
     font-size: 0.8125rem;
   }
 }

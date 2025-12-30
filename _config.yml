@@ -17,6 +17,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# Theme Configuration - Extend minima theme with custom layouts
+theme: minima
+
 # SEO and Social
 lang: en-US
 logo: /assets/images/logo.png

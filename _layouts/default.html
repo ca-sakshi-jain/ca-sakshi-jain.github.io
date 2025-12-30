@@ -1,45 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  {% seo %}
-
-  <!-- Load minima theme CSS first -->
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  <!-- Then load custom overrides -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-
-  <!-- Professional Schema Markup for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "{{ site.author.name }}",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "sameAs": [
-      "{{ site.author.linkedin }}",
-      "{{ site.author.portfolio }}"
-    ],
-    "knowsAbout": {{ site.expertise_areas | jsonify }}
-  }
-  </script>
-</head>
-<body>
-  {% include header.html %}
-
-  <main class="site-main">
-    <div class="container">
-      {{ content }}
-    </div>
-  </main>
-
-  {% include footer.html %}
-
-  <!-- Analytics placeholder - add your tracking code here -->
-</body>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
+  </body>
 </html>

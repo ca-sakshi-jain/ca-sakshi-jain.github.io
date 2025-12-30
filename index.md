@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "CA Sakshi Jain Journal and Blog"
-description: "Expert insights on US GAAP, IFRS, and Ind AS from a practicing Chartered Accountant. Technical analysis, CFO strategies, and audit expertise for global finance professionals."
+title: "CA Sakshi Jain | Finance Audit Expert"
+description: "CA Sakshi Jain - Expert insights on finance, audit, US GAAP, IFRS & Ind AS for chartered accountants and finance professionals."
 ---
+
+# CA Sakshi Jain - Finance, Audit & Accounting Expert
 
 ## The Journal of a CA: Navigate Finance & Strategy with Me
 

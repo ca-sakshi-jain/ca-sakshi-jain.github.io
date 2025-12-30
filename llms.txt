@@ -1,0 +1,84 @@
+# The Finance & Strategy Journal by CA Sakshi Jain
+> Professional insights on global accounting standards, audit, and strategic finance
+
+## Site Information
+- **URL**: https://ca-sakshi-jain.github.io
+- **Author**: CA Sakshi Jain, Chartered Accountant
+- **Focus**: US GAAP, IFRS, Ind AS, Audit, FP&A, CFO Leadership
+- **Audience**: CAs, CPAs, ACCA professionals, finance leaders
+
+## Core Content Areas
+
+### Global Accounting Standards
+Learn about US GAAP, IFRS, and Ind AS implementation, differences, and practical applications.
+> See: /
+
+### Revenue Recognition
+Deep dives into ASC 606, IFRS 15, and Ind AS 115 with real-world examples.
+> See: /accounting/2025/12/29/IndAS-115-and-IFRS-15/
+
+### Audit & Governance
+Practical insights on financial statement audits, internal controls, and compliance.
+> See: /
+
+### Strategic Finance & FP&A
+Bridging compliance accounting with strategic business leadership.
+> See: /
+
+## Key Pages
+
+### Home
+Main landing page with recent articles and author introduction.
+> See: /
+
+### Contact
+Get in touch with CA Sakshi Jain for professional inquiries.
+> See: /contact/
+
+### About
+Complete professional profile, certifications, and portfolio.
+> See: https://ca-sakshi-jain.github.io/ca-sakshi-jain/
+
+### Articles
+All blog posts on accounting, audit, and finance topics.
+> See: /#recent-posts
+
+### RSS Feed
+Subscribe to updates on new articles and insights.
+> See: /feed.xml
+
+## Author Credentials
+- **Name**: CA Sakshi Jain
+- **Qualification**: Chartered Accountant (CA), India
+- **Experience**: 6+ years in audit, financial reporting, strategic finance
+- **Expertise**:
+  - Global accounting standards (US GAAP, IFRS, Ind AS)
+  - Revenue recognition (ASC 606, IFRS 15, Ind AS 115)
+  - Financial statement audit & internal controls
+  - FP&A and strategic financial planning
+  - CFO readiness & finance leadership
+
+## Contact Information
+- **LinkedIn**: https://www.linkedin.com/in/casakshijain907/
+- **Email**: casakshi25@gmail.com
+- **Portfolio**: https://ca-sakshi-jain.github.io/ca-sakshi-jain/
+
+## Content License
+Content is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+Proper attribution required when referencing: "CA Sakshi Jain, The Finance & Strategy Journal"
+
+## Technical Details
+- **Platform**: Jekyll static site on GitHub Pages
+- **Theme**: Custom extension of Jekyll Minima
+- **SEO**: Comprehensive meta tags, structured data, sitemap
+- **Accessibility**: Semantic HTML5, responsive design
+- **AI-Friendly**: Structured content with clear metadata
+
+## Topics Covered
+Chartered Accountant insights, CA guidance, CPA resources, ACCA materials, US GAAP implementation, IFRS standards, Ind AS compliance, revenue recognition, ASC 606, IFRS 15, Ind AS 115, financial statement audit, internal controls, SOX compliance, FP&A, financial planning, analysis, CFO strategy, finance leadership, strategic finance, audit procedures, accounting standards, financial reporting, consolidations, lease accounting, financial instruments
+
+## Update Frequency
+Regular updates with new articles on accounting standards, audit practices, and strategic finance insights.
+
+## Sitemap
+Complete site structure available at: /sitemap.xml

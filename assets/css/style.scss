@@ -172,40 +172,6 @@ a:hover {
   }
 }
 
-/* ========== Daily Quote ========== */
-
-.daily-quote {
-  background: linear-gradient(135deg, var(--bg-subtle) 0%, #f0f4f8 100%);
-  border-bottom: 1px solid var(--border-color);
-  padding: calc(var(--spacing) * 2) 0;
-  margin-bottom: 0;
-}
-
-.quote-content {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-style: italic;
-}
-
-.quote-content p {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: calc(var(--spacing) * 0.5);
-  font-weight: 400;
-}
-
-.quote-content cite {
-  display: block;
-  color: var(--text-muted);
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-}
-
 /* ========== Main Content ========== */
 
 .page-content {
@@ -504,6 +470,33 @@ a:hover {
   color: var(--accent-color);
 }
 
+.footer-quote {
+  margin: calc(var(--spacing) * 1.5) 0;
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+}
+
+.footer-quote p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: calc(var(--spacing) * 0.5);
+  text-align: left;
+}
+
+.footer-quote cite {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+}
+
 .license-notice {
   margin-top: calc(var(--spacing) * 0.5);
   font-size: 0.8125rem;
@@ -616,12 +609,12 @@ a:hover {
     width: 100%;
   }
 
-  .daily-quote {
-    padding: calc(var(--spacing) * 1.5) 0;
+  .footer-quote {
+    padding: calc(var(--spacing) * 0.75) calc(var(--spacing) * 1);
   }
 
-  .quote-content p {
-    font-size: 0.9375rem;
+  .footer-quote p {
+    font-size: 0.8125rem;
   }
 }
 
@@ -633,7 +626,7 @@ a:hover {
   .site-footer,
   .post-share,
   .post-tags,
-  .daily-quote {
+  .footer-quote {
     display: none !important;
   }
 

@@ -20,8 +20,7 @@
         <h3>Expertise</h3>
         <ul class="expertise-list">
           <li>US GAAP, IFRS & Ind AS</li>
-          <li>Financial Statement Audit</li>
-          <li>Revenue Recognition (ASC 606)</li>
+          <li>Financial Audit</li>
           <li>Strategic Finance & FP&A</li>
         </ul>
       </div>
@@ -38,13 +37,16 @@
           <li>
             <a href="{{ site.author.portfolio }}" target="_blank">View my portfolio</a>
           </li>
+          <li>
+            <a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+          </li>
         </ul>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views. • <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views.</p>
 
       {%- assign today = 'now' | date: '%j' | plus: 0 -%}
       {%- assign quote_index = today | modulo: site.data.quotes.size -%}

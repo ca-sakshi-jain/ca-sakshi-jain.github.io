@@ -20,8 +20,7 @@
         <h3>Expertise</h3>
         <ul class="expertise-list">
           <li>US GAAP, IFRS & Ind AS</li>
-          <li>Financial Statement Audit</li>
-          <li>Revenue Recognition (ASC 606)</li>
+          <li>Financial Audit</li>
           <li>Strategic Finance & FP&A</li>
         </ul>
       </div>
@@ -38,22 +37,26 @@
           <li>
             <a href="{{ site.author.portfolio }}" target="_blank">View my portfolio</a>
           </li>
+          <li>
+            <a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+          </li>
         </ul>
       </div>
 
     </div>
 
-    {%- assign today = 'now' | date: '%j' | plus: 0 -%}
-    {%- assign quote_index = today | modulo: site.data.quotes.size -%}
-    {%- assign daily_quote = site.data.quotes[quote_index] -%}
-
-    <blockquote class="footer-quote">
-      <p>"{{ daily_quote.text }}"</p>
-      <cite>- {{ daily_quote.author }}</cite>
-    </blockquote>
-
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views. • <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}. All content is my own and doesn't reflect my employer's views.</p>
+
+      {%- assign today = 'now' | date: '%j' | plus: 0 -%}
+      {%- assign quote_index = today | modulo: site.data.quotes.size -%}
+      {%- assign daily_quote = site.data.quotes[quote_index] -%}
+
+      <blockquote class="footer-quote">
+        <p>"{{ daily_quote.text }}"</p>
+        <cite>- {{ daily_quote.author }}</cite>
+      </blockquote>
+
       <p class="license-notice">Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
     </div>
   </div>

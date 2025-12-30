@@ -1,19 +1,15 @@
 ---
 layout: default
-title: "CA Sakshi Jain | Finance Audit Expert"
-description: "CA Sakshi Jain - Expert insights on finance, audit, US GAAP, IFRS & Ind AS for chartered accountants and finance professionals."
+title: "CA Sakshi Jain | Global Financial Reporting, Audit & Strategic Financial Planning and Analyis"
+description: "CA Sakshi Jain | Expert insights on finance, audit, US GAAP, IFRS & Ind AS for chartered accountants and finance professionals."
 ---
 
-# CA Sakshi Jain - Finance, Audit & Accounting Expert
+# Navigate Finance & Strategy with Me
 
-## The Journal of a CA: Navigate Finance & Strategy with Me
-
-**by [Sakshi Jain, CA](https://www.linkedin.com/in/casakshijain907/)**
+### CA Sakshi Jain - Financial Reporting, Audit & Strategic Finance
 
 {% assign years = 'now' | date: "%Y" | minus: site.author.career_start_year %}
-Welcome to my corner of the internet! I'm sharing what I'm learning about global accounting standards, audit excellence, and strategic finance as I grow through {{ years }}+ years as a practicing Chartered Accountant.
-
----
+Welcome to my corner of the internet! I'm sharing what I'm learning about global accounting standards, audit, and strategic finance as I grow through {{ years }}+ years as a Chartered Accountant.
 
 ### What is this site about?
 

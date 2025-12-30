@@ -316,45 +316,61 @@ a:hover {
 
 /* Post Share */
 .post-share {
-  margin-top: calc(var(--spacing) * 3);
-  padding-top: calc(var(--spacing) * 2);
+  margin-top: calc(var(--spacing) * 2);
+  padding-top: calc(var(--spacing) * 1.5);
   border-top: 1px solid var(--border-color);
 }
 
-.post-share h4 {
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: var(--spacing);
-  color: var(--text-secondary);
+.share-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: calc(var(--spacing) * 0.75);
+  font-weight: 500;
 }
 
-.share-button {
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
-  margin-right: 0.75rem;
+.share-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
+  font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.2s ease;
-  font-size: 0.9375rem;
+  border: 1px solid;
 }
 
-.share-button.linkedin {
+.share-btn svg {
+  flex-shrink: 0;
+}
+
+.share-btn.linkedin {
   background: #0077b5;
   color: white;
+  border-color: #0077b5;
 }
 
-.share-button.linkedin:hover {
+.share-btn.linkedin:hover {
   background: #005885;
+  border-color: #005885;
   transform: translateY(-1px);
 }
 
-.share-button.twitter {
+.share-btn.twitter {
   background: #1DA1F2;
   color: white;
+  border-color: #1DA1F2;
 }
 
-.share-button.twitter:hover {
+.share-btn.twitter:hover {
   background: #0d8bd6;
+  border-color: #0d8bd6;
   transform: translateY(-1px);
 }
 
@@ -407,9 +423,10 @@ a:hover {
 }
 
 .expertise-list li {
-  padding: 0.375rem 0;
+  padding: 0.25rem 0;
   position: relative;
   padding-left: 1.25rem;
+  line-height: 1.5;
 }
 
 .expertise-list li::before {
@@ -421,13 +438,14 @@ a:hover {
 }
 
 .social-media-list li {
-  margin-bottom: calc(var(--spacing) * 0.5);
+  margin-bottom: 0.375rem;
+  line-height: 1.5;
 }
 
 .social-media-list a {
   color: var(--text-secondary);
   display: inline-block;
-  padding: 0.25rem 0;
+  padding: 0.125rem 0;
   transition: color 0.2s ease;
 }
 
@@ -441,6 +459,75 @@ a:hover {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.875rem;
+}
+
+.footer-bottom a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  color: var(--accent-color);
+}
+
+/* ========== Contact Page ========== */
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: calc(var(--spacing) * 2) 0;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 2px solid;
+  background: white;
+}
+
+.contact-btn svg {
+  flex-shrink: 0;
+}
+
+.contact-btn.email {
+  color: var(--text-primary);
+  border-color: var(--border-dark);
+}
+
+.contact-btn.email:hover {
+  background: var(--bg-subtle);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.contact-btn.linkedin {
+  color: #0077b5;
+  border-color: #0077b5;
+}
+
+.contact-btn.linkedin:hover {
+  background: #0077b5;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contact-btn.portfolio {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.contact-btn.portfolio:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* ========== Responsive ========== */
@@ -469,6 +556,24 @@ a:hover {
   .footer-col-wrapper {
     grid-template-columns: 1fr;
     gap: calc(var(--spacing) * 2);
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+  }
+
+  .share-btn {
+    justify-content: center;
+    width: 100%;
   }
 }
 

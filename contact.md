@@ -1,10 +1,13 @@
 ---
 layout: default
-title: "Contact"
+title: "Contact CA Sakshi Jain | Finance & Audit Expert"
+description: "Contact CA Sakshi Jain for finance, audit, and accounting guidance on US GAAP, IFRS, Ind AS and strategic finance matters."
 permalink: /contact/
 ---
 
-# Let's Connect!
+# Contact CA Sakshi Jain - Finance & Audit Expert
+
+## Let's Connect!
 
 I'd love to hear from you. Whether you have questions about accounting standards, need guidance on audit matters, or just want to chat about finance leadership - I'm here to help.
 

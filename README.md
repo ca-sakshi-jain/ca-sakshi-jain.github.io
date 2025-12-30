@@ -1,6 +1,6 @@
-# The Finance & Strategy Journal
+# A Finance & Strategy Journal
 
-**Professional finance blog by CA Sakshi Jain**
+**Personal finance blog by CA Sakshi Jain**
 
 🌐 **Live Site:** [https://ca-sakshi-jain.github.io](https://ca-sakshi-jain.github.io)
 
@@ -8,9 +8,10 @@
 
 ## About This Blog
 
-A professional blog focused on global accounting standards (US GAAP, IFRS, Ind AS), audit excellence, and strategic finance leadership.
+A personal blog focused on global accounting standards (US GAAP, IFRS, Ind AS), audit excellence, and strategic finance leadership.
 
 **Author:** CA Sakshi Jain
+
 **Topics:** Global Accounting Standards, Revenue Recognition, Audit, FP&A, CFO Leadership
 
 ---

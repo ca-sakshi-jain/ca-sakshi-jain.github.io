@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Let's Connect!
 
-I'd love to hear from you. Whether you have questions about accounting standards, need guidance on audit matters, or just want to chat about finance leadership—I'm here to help.
+I'd love to hear from you. Whether you have questions about accounting standards, need guidance on audit matters, or just want to chat about finance leadership - I'm here to help.
 
 ---
 

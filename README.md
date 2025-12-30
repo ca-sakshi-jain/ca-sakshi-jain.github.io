@@ -15,28 +15,28 @@ A professional blog focused on global accounting standards (US GAAP, IFRS, Ind A
 
 ---
 
-## 📝 How to Add a New Blog Post (Non-Technical Guide)
+## 📝 How to Add a New Blog Post
 
 ### Step 1: Create Your Post File
 
 1. Navigate to the `_posts` folder
-2. Create a new file with this exact naming format: `YYYY-MM-DD-your-post-title.md`
+2. Create a new file: `YYYY-MM-DD-your-post-title.md`
    - Example: `2025-12-30-understanding-lease-accounting.md`
-   - **Important:** Use today's date and lowercase letters with hyphens
+   - Use today's date and lowercase with hyphens
 
 ### Step 2: Add Front Matter
 
-At the very top of your file, copy and paste this template:
+At the top of your file, add this template:
 
-```markdown
+```yaml
 ---
 layout: post
 title: "Your Article Title Here"
 date: 2025-12-30
 last_modified_at: 2025-12-30
 categories: [accounting, financial-reporting]
-tags: [Ind AS, IFRS, US GAAP, relevant, keywords, here]
-excerpt: "A brief 1-2 sentence description of your article that will appear in search results and previews."
+tags: [Ind AS, IFRS, US GAAP, relevant, keywords]
+excerpt: "A brief description that appears in search results and previews."
 author: "CA Sakshi Jain"
 keywords: "comma, separated, keywords, for, SEO"
 ---
@@ -44,94 +44,150 @@ keywords: "comma, separated, keywords, for, SEO"
 
 ### Step 3: Write Your Content
 
-After the front matter (after the `---`), write your article in Markdown format:
+Write your article in Markdown format:
 
 ```markdown
-# Main Heading
-
-Your introduction paragraph goes here...
-
 ## Section Heading
 
-Your content with **bold text** and *italic text*.
+Your content with **bold** and *italic* text.
 
-### Subsection
-
-- Bullet point 1
-- Bullet point 2
-
-1. Numbered list item
-2. Another item
+- Bullet points
+- Another point
 
 [Link text](https://example.com)
 ```
 
-### Step 4: Save and Publish
+### Step 4: Publish
 
 1. Save your file
-2. Commit the file to the repository
+2. Commit to the repository
 3. Push to GitHub
-4. **Your post will automatically appear on the site within 1-2 minutes!**
+4. **Site updates automatically in 1-2 minutes!**
 
 ---
 
-## 📂 What's in This Repository
+## 📂 Repository Structure
 
 ```
 .
-├── _posts/              ← Add your blog posts here
-├── _layouts/            ← Site templates (don't modify)
-├── _includes/           ← Header and footer (don't modify)
-├── assets/css/          ← Styling (don't modify)
+├── _posts/              ← Your blog posts (YYYY-MM-DD-title.md)
+├── _layouts/            ← HTML templates
+├── _includes/           ← Header and footer components
+├── assets/
+│   └── css/
+│       └── style.scss   ← Site styling
 ├── index.md             ← Homepage
-├── about.md             ← About page
 ├── contact.md           ← Contact page
-└── _config.yml          ← Site settings
+├── about.md             ← Redirects to portfolio
+├── _config.yml          ← Site configuration
+├── LICENSE              ← Dual license (MIT + CC BY 4.0)
+└── README.md            ← This file
 ```
 
-### What You'll Edit:
-- **`_posts/`** folder - Add new blog posts here
-- **`contact.md`** - Update contact info
+### What You'll Edit
 
-### What NOT to Edit:
-- `_layouts/` and `_includes/` folders
-- `assets/css/` folder
-- `about.md` (automatically redirects to portfolio site)
-- Other files (unless you know what you're doing)
+- **`_posts/`** - Add new blog posts here
+- **`contact.md`** - Update contact information
+- **`index.md`** - Edit homepage content (if needed)
 
-**Note:** The "About" page automatically redirects to your detailed portfolio at https://ca-sakshi-jain.github.io/ca-sakshi-jain/
+### What NOT to Edit
+
+- `_layouts/` and `_includes/` - Template structure
+- `assets/css/` - Styling (unless you want to customize)
+- `about.md` - Redirects to portfolio site
 
 ---
 
 ## 🚀 How It Works
 
-1. You write blog posts in Markdown (simple text formatting)
-2. Save posts in the `_posts/` folder
+1. Write posts in Markdown (simple text formatting)
+2. Save in `_posts/` folder
 3. Push to GitHub
-4. Your site updates automatically in 1-2 minutes
+4. GitHub Pages builds automatically
+5. Site updates in 1-2 minutes
 
-**That's it! No technical knowledge needed.**
+**No build tools or technical setup required!**
+
+---
+
+## 🛠️ Local Development (Optional)
+
+To preview changes locally before publishing:
+
+### Prerequisites
+
+- Ruby 3.1+ (install via [rbenv](https://github.com/rbenv/rbenv))
+- Bundler gem manager
+
+### Setup
+
+```bash
+# Install dependencies
+bundle install
+
+# Start local server
+bundle exec jekyll serve --livereload
+
+# Open in browser
+# http://localhost:4000
+```
+
+**Note:** Local development files (`.ruby-version`, `Gemfile`, `Gemfile.lock`) are gitignored and not required for GitHub Pages deployment.
+
+---
+
+## 📜 License
+
+This project uses a dual-license approach:
+
+### Code (MIT License)
+
+The Jekyll theme, HTML templates, CSS, and code are licensed under the [MIT License](LICENSE).
+
+**This means:** You're free to use, modify, and distribute the code.
+
+### Content (CC BY 4.0)
+
+Blog posts and articles are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**This means:**
+- ✅ Share and adapt the content
+- ✅ Attribution required (credit to CA Sakshi Jain)
+- ✅ Indicate if changes were made
+
+---
+
+## 🌟 Features
+
+- **Auto-updating years of experience** - No manual updates needed
+- **Professional share buttons** - LinkedIn and Twitter with icons
+- **Tag system** - Organized content by topics
+- **Contact page** - Standardized buttons with icons
+- **Footer with expertise** - Professional credentials display
+- **Warm, professional tone** - Throughout the site
+- **Clean navigation** - Simple, intuitive menu
 
 ---
 
 ## 💡 Quick Tips
 
 - Use clear, descriptive titles
-- Include relevant tags (helps people find your posts)
-- Write detailed excerpts (appears in search results)
-- Use headings (`##`, `###`) to organize your content
+- Include 10+ relevant tags per post
+- Write detailed excerpts (150-200 characters)
+- Use headings (`##`, `###`) to structure content
+- Add internal links between related posts
+- Keep the warm, professional tone
 
 ---
 
-## 📧 Questions?
+## 📧 Support
 
-**Technical issues:** File an issue in this GitHub repository
+**Technical issues:** [Open an issue](https://github.com/ca-sakshi-jain/ca-sakshi-jain.github.io/issues)
 **General questions:** [casakshi25@gmail.com](mailto:casakshi25@gmail.com)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/casakshijain907/)
 
 ---
 
 **Live Site:** [https://ca-sakshi-jain.github.io](https://ca-sakshi-jain.github.io)
 
----
-
-© 2025 CA Sakshi Jain. All rights reserved.
+© 2025 CA Sakshi Jain. Content licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code licensed under [MIT License](LICENSE).

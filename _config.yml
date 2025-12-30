@@ -1,4 +1,4 @@
-title: "CA Sakshi Jain | Financial Reporting, Audit & Strategic Financial Planning and Analyis"
+title: "CA Sakshi Jain | Global Financial Reporting, Audit & Strategic Financial Planning and Analyis"
 tagline: "Global Financial Reporting • Audit • Finance Leadership"
 description: "CA Sakshi Jain shares expert insights on finance, audit, US GAAP, IFRS & Ind AS for CAs, CPAs and ACCA professionals navigating global accounting standards."
 author:
@@ -6,6 +6,9 @@ author:
   email: "casakshi25@gmail.com"
   linkedin: "https://www.linkedin.com/in/casakshijain907/"
   portfolio: "https://ca-sakshi-jain.github.io/ca-sakshi-jain/"
+  youtube: "https://www.youtube.com/@casakshijain907"
+  twitter: "https://twitter.com/casakshijain907"
+  instagram: "https://www.instagram.com/casakshijain907/"
   career_start_year: 2019  # Year you started your finance career
 
 url: "https://ca-sakshi-jain.github.io"
@@ -24,13 +27,16 @@ theme: minima
 lang: en-US
 logo: /assets/images/logo.png
 twitter:
-  username: casakshijain
+  username: casakshijain907
   card: summary
 social:
   name: CA Sakshi Jain
   links:
     - https://www.linkedin.com/in/casakshijain907/
     - https://ca-sakshi-jain.github.io/ca-sakshi-jain/
+    - https://www.youtube.com/@casakshijain907
+    - https://twitter.com/casakshijain907
+    - https://www.instagram.com/casakshijain907/
 
 # SEO plugins built into GitHub Pages
 plugins:

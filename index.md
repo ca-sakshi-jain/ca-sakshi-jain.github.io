@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "CA Sakshi Jain | Global Financial Reporting, Audit & Strategic Financial Planning and Analyis"
+title: "CA Sakshi Jain | Chartered Accountant | Global Financial Reporting, Audit & Strategic Financial Planning"
 description: "CA Sakshi Jain | Expert insights on finance, audit, US GAAP, IFRS & Ind AS for chartered accountants and finance professionals."
 ---
 

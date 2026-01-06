@@ -32,25 +32,18 @@ To construct a robust bridge between **Prior Period (PP)** and **Current Period 
 
 This measures the change in revenue attributable purely to the change in price, holding current volume constant.
 
-\[
-\text{Price Impact} = (CP_{\text{Price}} - PP_{\text{Price}}) \times CP_{\text{Volume}}
-\]
+**Price Impact = (CP_{Price} - PP_{Price}) x CP_{Volume}**
 
 ### B. Volume Impact
 
 This measures the revenue change from selling different quantities, valued at the prior period's price to avoid *double counting* the price change.
 
-\[
-\text{Volume Impact} = (CP_{\text{Volume}} - PP_{\text{Volume}}) \times PP_{\text{Price}}
-\]
+**Volume Impact = (CP_{Volume} - PP_{Volume}) x times PP_{Price}**
 
 ### C. The Mathematical Proof
 
-\[
-PP_{\text{Revenue}} + \text{Price Impact} + \text{Volume Impact} = CP_{\text{Revenue}}
-\]
+PP{Revenue} + {Price Impact} + {Volume Impact} = CP_{Revenue}
 
----
 
 ## 3. Practical Case Study: The Tech Retailer
 
@@ -66,20 +59,18 @@ Imagine you are analyzing the performance of a laptop store comparing **Budget v
 ### The Analysis
 
 - **High-End Price Impact:**  
-  \((85k - 80k) \times 900 = +₹45,00,000\) *(Positive Pricing Power)*
+  (85k - 80k) x 900 = +₹45,00,000\- *(Positive Pricing Power)*
 
 - **High-End Volume Impact:**  
-  \((900 - 1000) \times 80k = -₹80,00,000\) *(Loss in Volume)*
+  (900 - 1000) x 80k = -₹80,00,000\- *(Loss in Volume)*
 
 - **Budget Price Impact:**  
-  \((35k - 40k) \times 2500 = -₹1,25,00,000\) *(Aggressive Discounting)*
+  (35k - 40k) x 2500 = -₹1,25,00,000\- *(Aggressive Discounting)*
 
 - **Budget Volume Impact:**  
-  \((2500 - 2000) \times 40k = +₹2,00,00,000\) *(Market Share Gain)*
+  (2500 - 2000) x 40k = +₹2,00,00,000\- *(Market Share Gain)*
 
 **Total Net Variance:** **+₹40,00,000**
-
----
 
 ## 4. The "CFO" Narrative
 
@@ -89,8 +80,6 @@ An accountant looks at this and says:
 The FP&A/CFO perspective says:  
 > *"While we successfully drove a ₹2 Crore volume gain in the Budget segment through aggressive discounting, that pricing strategy cost us ₹1.25 Crores in margin. Meanwhile, our High-End segment is showing pricing power (₹45L gain) but is losing market share (₹80L loss). We need to re-evaluate if the Budget segment's volume gain justifies the price erosion."*
 
----
-
 ## 🛠️ Portfolio Homework: Build the Waterfall
 
 1. Input the dataset above into Excel.  
@@ -98,10 +87,7 @@ The FP&A/CFO perspective says:
 3. Create a **Waterfall Chart** (*Insert → Charts → Waterfall*).  
 4. Label your **Starting Point** (*Budget Revenue*) and **Ending Point** (*Actual Revenue*).
 
----
-
 ## Conclusion
 
 The **Revenue Bridge** is the bridge between the **Trial Balance** and the **Boardroom**. Mastering this analysis is the first step toward becoming a strategic partner to the CEO.
 
-*Stay tuned for Day 4, where we analyze Gross Margin Bridges and the impact of COGS variances.*

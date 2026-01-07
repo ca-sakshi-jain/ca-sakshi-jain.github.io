@@ -1,10 +1,14 @@
 ---
-title: "The Audit Engagement Letter: The "DNA" of an Audit"
+layout: post
+title: "The Audit Engagement Letter: Navigating the 'DNA' of an Audit"
 date: 2026-01-07
-author: CA Sakshi Jain
-category: Audit & Assurance
-tags: [Audit, ICAI, AICPA, EngagementLetter, Compliance]
-summary: "An in-depth look at why the Engagement Letter is the DNA of an audit, featuring a key comparison between Indian (SA 210) and US (PCAOB/AICPA) standards."
+last_modified_at: 2026-01-07
+categories: [audit, financial-reporting]
+tags: [SA 210, AS 1301, PCAOB, Audit, Engagement Letter, US GAAP, Ind AS, CA, CPA, Risk Management, Corporate Governance]
+excerpt: "The Audit Engagement Letter is more than just a formal handshake—it is the foundational document that defines the boundaries of an audit. Explore the critical differences between Indian (SA 210) and USA (PCAOB/AICPA) standards and learn how to manage expectations to avoid scope creep."
+author: "CA Sakshi Jain"
+image: /assets/images/default-post.png
+keywords: "audit engagement letter, SA 210, AS 1301, PCAOB, AICPA, audit scope, management responsibility, auditor responsibility, India vs USA audit, CA student, CPA professional"
 ---
 
 # 🏗️ The Audit Engagement Letter: The "DNA" of an Audit

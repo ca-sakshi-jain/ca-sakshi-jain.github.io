@@ -30,13 +30,13 @@ The dispute traces back to one of India's most successful startup exits.
 
 ## 2. Why the TRC Exemption was Disallowed
 
-For decades, the **Tax Residency Certificate (TRC)** was considered a "sacrosanct" shield. The SC has now clarified it is merely a "passport"—not a guarantee of entry.
+For decades, the **Tax Residency Certificate (TRC)** was considered a "sacrosanct" shield. The SC has now clarified it is merely a "passport", not a guarantee of entry.
 
 ### The "Head & Brain" Test
 The Revenue proved that the Mauritius entities were effectively "empty shells." No independent employees or managers were making investment decisions in Mauritius. Evidence showed that all key decisions were made by the US-based team.
 
 ### The "Conduit" Finding
-The Court classified these entities as mere "pass-throughs." They lacked **Commercial Substance**—meaning they existed solely to facilitate the tax-free flow of capital rather than conducting actual business operations in Mauritius.
+The Court classified these entities as mere "pass-throughs." They lacked **Commercial Substance**, meaning they existed solely to facilitate the tax-free flow of capital rather than conducting actual business operations in Mauritius.
 
 ### GAAR Overlap
 In a significant move, the Court ruled that **GAAR (General Anti-Avoidance Rules)** can be applied to deny treaty benefits even if the investment date predates the law, provided the *exit* or *arrangement* is found to be abusive.

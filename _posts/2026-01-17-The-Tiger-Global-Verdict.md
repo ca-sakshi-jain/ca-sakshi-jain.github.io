@@ -4,10 +4,15 @@ title: "The Tiger Global Verdict: A Watershed Moment in Indian International Tax
 description: "Analyzing the Supreme Court's landmark 2026 ruling on the Flipkart-Walmart exit and the end of 'Form over Substance'."
 pubDate: 2026-01-17
 author: "CA Sakshi Jain"
-image: 
-    url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
-    alt: "Legal gavel representing the Supreme Court ruling"
-tags: ["Tax", "InternationalTax", "India", "TigerGlobal", "GAAR"]
+image:
+  url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+  alt: "Legal gavel representing the Supreme Court ruling"
+tags:
+  - Tax
+  - InternationalTax
+  - India
+  - TigerGlobal
+  - GAAR
 ---
 
 On January 15, 2026, the Supreme Court of India delivered a verdict that fundamentally rewrites the playbook for foreign investment in India. By upholding a **₹14,500 crore ($1.7 billion)** tax demand against Tiger Global, the Court has signaled that "Substance" is now the only currency that matters in Indian tax treaty claims.

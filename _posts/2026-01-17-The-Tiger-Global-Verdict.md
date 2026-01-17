@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: "The Tiger Global Verdict: A Watershed Moment in Indian International Tax"
 description: "Analyzing the Supreme Court's landmark 2026 ruling on the Flipkart-Walmart exit and the end of 'Form over Substance'."
 pubDate: 2026-01-17
-author: "Your Name"
+author: "CA Sakshi Jain"
 image: 
     url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
     alt: "Legal gavel representing the Supreme Court ruling"

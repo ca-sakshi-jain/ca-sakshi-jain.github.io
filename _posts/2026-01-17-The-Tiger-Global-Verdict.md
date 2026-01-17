@@ -20,7 +20,7 @@ On January 15, 2026, the Supreme Court of India delivered a verdict that fundame
 The dispute traces back to one of India's most successful startup exits.
 
 * **2011–2015:** Tiger Global (US-based) invested in **Flipkart** using a multi-layered structure. They didn't invest directly; they set up three entities in **Mauritius**, which held shares in a Flipkart **Singapore** holding company, which in turn owned the Indian operating entity.
-* **2018:** During Walmart’s $16 billion acquisition of Flipkart, the Tiger Global Mauritius entities sold their Singapore shares.
+* **2018:** During Walmart’s $16 billion acquisition of Flipkart, the Tiger Global Mauritius entities sold their Flipkart Singapore shares.
 * **The Claim:** Tiger Global claimed 0% capital gains tax under the India-Mauritius DTAA, arguing the investments were "grandfathered" (made before April 2017).
 * **The Result:** The Supreme Court overturned the Delhi High Court's favor, ruling the structure was an **"impermissible tax avoidance arrangement."**
 

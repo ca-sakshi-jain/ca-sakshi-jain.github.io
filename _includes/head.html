@@ -9,6 +9,9 @@
 
   {%- seo -%}
 
+  <!-- Canonical URL to prevent duplicate content issues -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
   <meta name="google-site-verification" content="PdwIn2cWuIoq3dpwfd1XtKQBWPhN9d9Vqvd2-s-tXRU" />
   
   <!-- Favicon -->

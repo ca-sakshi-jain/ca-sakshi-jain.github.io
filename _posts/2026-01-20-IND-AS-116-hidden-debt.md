@@ -8,8 +8,6 @@ tags: [Ind AS 115, IFRS 15, ASC 606, US GAAP, revenue recognition, performance o
 keywords: "revenue recognition, Ind AS 115, IFRS 15, ASC 606, performance obligations, contract assets, telecom accounting, CFO strategy, FP&A modeling, audit, chartered accountant, CPA, ACCA, global accounting standards"
 ---
 
-## 🏢 The Hidden Debt: Is Your Balance Sheet Ready for Ind AS 116?
-
 If you think a lease is just a monthly **“rent expense,”** your financial ratios are probably outdated.
 
 In today’s regulatory environment, **simple rent has evolved into a capital allocation decision**, one that directly impacts leverage, EBITDA, covenants, and strategic planning.

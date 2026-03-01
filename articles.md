@@ -5,9 +5,9 @@ description: "Browse all articles on financial reporting, audit, and FP&A strate
 permalink: /articles/
 ---
 
-# All Articles
-
 <div class="articles-container">
+  # All Articles
+
   <div class="search-filter-top">
     <div class="search-box-top">
       <input 

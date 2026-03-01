@@ -7,40 +7,45 @@ permalink: /articles/
 
 # All Articles
 
-<div class="articles-container">
-  <div class="search-filter-section">
-    <div class="search-box">
+<div class="articles-wrapper">
+  <aside class="articles-sidebar">
+    <div class="search-box-sidebar">
       <input 
         type="text" 
         id="searchInput" 
-        placeholder="Search by title or tags..." 
-        class="search-input"
+        placeholder="Search articles..." 
+        class="search-input-sidebar"
       />
-      <span class="search-icon">🔍</span>
     </div>
     
-    <div class="tags-filter">
-      <h4>Filter by Tags:</h4>
-      <div id="tagsContainer" class="tags-list">
+    <div class="tags-filter-section">
+      <button class="tags-toggle" id="tagsToggle">
+        <span class="toggle-label">Filter by Tags</span>
+        <span class="toggle-icon">▼</span>
+      </button>
+      <div id="tagsContainer" class="tags-list-sidebar" style="display: none;">
         <!-- Tags will be dynamically inserted here -->
       </div>
-      <button id="clearTagsBtn" class="btn-clear" style="display: none;">Clear Filters</button>
     </div>
-  </div>
+    
+    <button id="clearFiltersBtn" class="btn-clear-sidebar" style="display: none;">Clear All</button>
+  </aside>
 
-  <div class="articles-stats">
-    <span id="resultsCount">Showing all articles</span>
-  </div>
-
-  <div id="articlesGrid" class="articles-grid">
-    <!-- Articles will be inserted here by JavaScript -->
-  </div>
-
-  <div class="pagination-section">
-    <div id="paginationControls" class="pagination-controls">
-      <!-- Pagination buttons will be inserted here -->
+  <main class="articles-main">
+    <div class="articles-header">
+      <span id="resultsCount">Loading articles...</span>
     </div>
-  </div>
+
+    <div id="articlesGrid" class="articles-grid">
+      <!-- Articles will be inserted here by JavaScript -->
+    </div>
+
+    <div class="pagination-section">
+      <div id="paginationControls" class="pagination-controls">
+        <!-- Pagination buttons will be inserted here -->
+      </div>
+    </div>
+  </main>
 </div>
 
 <script>
@@ -55,19 +60,19 @@ document.addEventListener('DOMContentLoaded', function() {
       author: {{ post.author | jsonify }},
       description: {{ post.description | jsonify }},
       tags: {{ post.tags | jsonify }},
-      dateObj: new Date({{ post.date | date: "%Y,%m,%d" | replace: ",", "," }})
+      dateObj: new Date({{ post.date | date: "%Y" }}, {{ post.date | date: "%m" | minus: 1 }}, {{ post.date | date: "%d" }})
     }{{ unless forloop.last }},{{ endunless }}
     {% endfor %}
   ];
 
   // State management
   const state = {
-    allPosts: postsData,
-    filteredPosts: postsData,
+    allPosts: postsData.sort(function(a, b) { return b.dateObj - a.dateObj; }),
+    filteredPosts: [],
     selectedTags: new Set(),
     searchQuery: '',
     currentPage: 1,
-    itemsPerPage: 10
+    itemsPerPage: 5
   };
 
   // Extract all unique tags
@@ -87,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const allTags = getAllTags();
     
     tagsContainer.innerHTML = allTags.map(tag => `
-      <label class="tag-filter">
+      <label class="tag-filter-item">
         <input 
           type="checkbox" 
           value="${tag}" 
@@ -160,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const paginatedPosts = getPaginatedPosts();
 
     if (paginatedPosts.length === 0) {
-      articlesGrid.innerHTML = '<div class="no-results">No articles found. Try adjusting your filters.</div>';
+      articlesGrid.innerHTML = '<div class="no-results">No articles found. Try adjusting your filters or search.</div>';
       return;
     }
 
@@ -168,21 +173,20 @@ document.addEventListener('DOMContentLoaded', function() {
       const topTags = post.tags ? post.tags.slice(0, 3) : [];
       return `
         <article class="article-card">
-          <div class="article-header">
-            <h3 class="article-title">
-              <a href="${post.url}">${post.title}</a>
-            </h3>
-            <div class="article-meta">
-              <time class="article-date">${post.date}</time>
-              <span class="article-author">by ${post.author}</span>
-            </div>
+          <h3 class="article-title">
+            <a href="${post.url}">${post.title}</a>
+          </h3>
+          
+          <div class="article-meta">
+            <time class="article-date">${post.date}</time>
+            <span class="article-author">by ${post.author}</span>
           </div>
           
           <p class="article-description">${post.description}</p>
           
           <div class="article-tags">
             ${topTags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-            ${post.tags.length > 3 ? `<span class="tag-more">+${post.tags.length - 3}</span>` : ''}
+            ${post.tags && post.tags.length > 3 ? `<span class="tag-more">+${post.tags.length - 3} more</span>` : ''}
           </div>
           
           <a href="${post.url}" class="read-more">Read More →</a>
@@ -205,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Previous button
     if (state.currentPage > 1) {
-      html += `<button class="page-btn" onclick="goToPage(${state.currentPage - 1})">← Previous</button>`;
+      html += `<button class="page-btn" onclick="window.goToPage(${state.currentPage - 1})">← Previous</button>`;
     }
 
     // Page numbers
@@ -213,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (i === state.currentPage) {
         html += `<span class="page-number current">${i}</span>`;
       } else if (i <= 3 || i >= totalPages - 2 || Math.abs(i - state.currentPage) <= 1) {
-        html += `<button class="page-btn" onclick="goToPage(${i})">${i}</button>`;
+        html += `<button class="page-btn" onclick="window.goToPage(${i})">${i}</button>`;
       } else if (i === 4 || i === totalPages - 3) {
         html += `<span class="page-ellipsis">...</span>`;
       }
@@ -221,11 +225,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Next button
     if (state.currentPage < totalPages) {
-      html += `<button class="page-btn" onclick="goToPage(${state.currentPage + 1})">Next →</button>`;
+      html += `<button class="page-btn" onclick="window.goToPage(${state.currentPage + 1})">Next →</button>`;
     }
 
     paginationControls.innerHTML = html;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   // Update results count
@@ -233,17 +236,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultsCount = document.getElementById('resultsCount');
     const total = state.filteredPosts.length;
     const totalPages = getTotalPages();
+    const start = (state.currentPage - 1) * state.itemsPerPage + 1;
+    const end = Math.min(state.currentPage * state.itemsPerPage, total);
 
-    if (state.selectedTags.size > 0 || state.searchQuery) {
-      resultsCount.textContent = `Found ${total} article${total !== 1 ? 's' : ''} (Page ${state.currentPage} of ${totalPages || 1})`;
+    if (state.filteredPosts.length === 0) {
+      resultsCount.textContent = 'No articles found';
     } else {
-      resultsCount.textContent = `Showing all ${total} articles (Page ${state.currentPage} of ${totalPages || 1})`;
+      resultsCount.textContent = `Showing ${start}-${end} of ${total} article${total !== 1 ? 's' : ''} (Page ${state.currentPage} of ${totalPages})`;
     }
   }
 
   // Update clear button visibility
   function updateClearButton() {
-    const clearBtn = document.getElementById('clearTagsBtn');
+    const clearBtn = document.getElementById('clearFiltersBtn');
     if (state.selectedTags.size > 0 || state.searchQuery) {
       clearBtn.style.display = 'inline-block';
     } else {
@@ -264,10 +269,19 @@ document.addEventListener('DOMContentLoaded', function() {
   window.goToPage = function(pageNum) {
     state.currentPage = pageNum;
     filterAndRender();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Toggle tags dropdown
+  document.getElementById('tagsToggle').addEventListener('click', function() {
+    const container = document.getElementById('tagsContainer');
+    const isVisible = container.style.display !== 'none';
+    container.style.display = isVisible ? 'none' : 'block';
+    this.classList.toggle('active');
+  });
+
   // Clear all filters
-  document.getElementById('clearTagsBtn').addEventListener('click', function() {
+  document.getElementById('clearFiltersBtn').addEventListener('click', function() {
     state.selectedTags.clear();
     state.searchQuery = '';
     document.getElementById('searchInput').value = '';
@@ -295,114 +309,134 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initial render
   renderTags();
-  renderArticles();
-  renderPagination();
-  updateResultsCount();
+  filterAndRender();
 });
 </script>
 
 <style>
-.articles-container {
-  max-width: 900px;
+.articles-wrapper {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.search-filter-section {
+.articles-sidebar {
+  flex: 0 0 280px;
   background: #f8f9fa;
   border-radius: 8px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
 }
 
-.search-box {
-  position: relative;
+.search-box-sidebar {
   margin-bottom: 1.5rem;
 }
 
-.search-input {
+.search-input-sidebar {
   width: 100%;
-  padding: 0.75rem 2.5rem 0.75rem 1rem;
-  font-size: 1rem;
+  padding: 0.75rem;
+  font-size: 0.95rem;
   border: 2px solid #ddd;
   border-radius: 6px;
   transition: border-color 0.3s;
 }
 
-.search-input:focus {
+.search-input-sidebar:focus {
   outline: none;
   border-color: #0366d6;
 }
 
-.search-icon {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #999;
+.tags-filter-section {
+  margin-bottom: 1rem;
 }
 
-.tags-filter {
-  margin-top: 1.5rem;
-}
-
-.tags-filter h4 {
-  margin: 0 0 0.75rem 0;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-.tags-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag-filter {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+.tags-toggle {
+  width: 100%;
+  padding: 0.75rem;
   background: white;
   border: 1px solid #ddd;
-  border-radius: 20px;
+  border-radius: 6px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
   transition: all 0.2s;
-  font-size: 0.85rem;
 }
 
-.tag-filter:hover {
+.tags-toggle:hover {
+  border-color: #0366d6;
+  color: #0366d6;
+}
+
+.tags-toggle.active {
   border-color: #0366d6;
   background: #f0f7ff;
 }
 
-.tag-filter input[type="checkbox"] {
+.toggle-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.tags-toggle.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.tags-list-sidebar {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0;
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+}
+
+.tag-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tag-filter-item input {
   cursor: pointer;
   margin: 0;
 }
 
-.tag-filter input[type="checkbox"]:checked + .tag-label {
-  font-weight: 600;
+.tag-filter-item:hover {
   color: #0366d6;
 }
 
-.btn-clear {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+.btn-clear-sidebar {
+  width: 100%;
+  padding: 0.65rem;
   background: #d73a49;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
+  font-weight: 500;
   transition: background 0.2s;
+  margin-top: 1rem;
 }
 
-.btn-clear:hover {
+.btn-clear-sidebar:hover {
   background: #cb2431;
 }
 
-.articles-stats {
+.articles-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.articles-header {
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
   color: #666;
@@ -416,7 +450,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .article-card {
   border: 1px solid #e1e4e8;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 1.5rem;
   transition: all 0.3s;
   background: white;
@@ -427,13 +461,10 @@ document.addEventListener('DOMContentLoaded', function() {
   box-shadow: 0 3px 12px rgba(3, 102, 214, 0.1);
 }
 
-.article-header {
-  margin-bottom: 1rem;
-}
-
 .article-title {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.3rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .article-title a {
@@ -447,15 +478,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .article-meta {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 0.85rem;
   color: #666;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .article-description {
   margin: 1rem 0;
   color: #555;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .article-tags {
@@ -467,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .tag {
   display: inline-block;
-  padding: 0.25rem 0.6rem;
+  padding: 0.35rem 0.7rem;
   background: #f1f3f5;
   color: #495057;
   border-radius: 12px;
@@ -476,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .tag-more {
-  padding: 0.25rem 0.6rem;
+  padding: 0.35rem 0.7rem;
   color: #666;
   font-size: 0.8rem;
   font-style: italic;
@@ -487,24 +521,24 @@ document.addEventListener('DOMContentLoaded', function() {
   color: #0366d6;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s;
+  margin-top: 0.5rem;
 }
 
 .read-more:hover {
-  color: #0256c7;
-  gap: 0.25rem;
+  text-decoration: underline;
 }
 
 .no-results {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
   color: #666;
   background: #f6f8fa;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .pagination-section {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .pagination-controls {
@@ -534,40 +568,45 @@ document.addEventListener('DOMContentLoaded', function() {
 .page-number {
   padding: 0.5rem 0.75rem;
   font-weight: 500;
+  min-width: 2.5rem;
 }
 
 .page-number.current {
   background: #0366d6;
   color: white;
   border-radius: 4px;
-  min-width: 2.5rem;
 }
 
 .page-ellipsis {
   color: #999;
+  padding: 0 0.25rem;
 }
 
-@media (max-width: 600px) {
-  .search-filter-section {
-    padding: 1rem;
+@media (max-width: 768px) {
+  .articles-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  
-  .article-card {
-    padding: 1rem;
+
+  .articles-sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
   }
-  
+
   .article-meta {
     flex-direction: column;
     gap: 0.25rem;
   }
-  
+
   .pagination-controls {
     gap: 0.25rem;
   }
-  
+
   .page-btn, .page-number {
     padding: 0.4rem 0.6rem;
     font-size: 0.85rem;
   }
 }
 </style>
+

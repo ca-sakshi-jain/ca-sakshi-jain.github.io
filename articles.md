@@ -1,13 +1,11 @@
 ---
 layout: default
 title: "All Articles"
-description: "Browse all articles on financial reporting, audit, and FP&A strategy."
+description: "Browse all articles on financial reporting, audit, and FP&A strategy by CA Sakshi Jain."
 permalink: /articles/
 ---
 
 <div class="articles-container">
-  # All Articles
-
   <div class="search-filter-top">
     <div class="search-box-top">
       <input 

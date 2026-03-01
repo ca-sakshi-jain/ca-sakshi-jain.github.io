@@ -35,3 +35,5 @@ While I use this blog to share insights and learnings, you'll find my complete p
 {% for post in site.posts limit:5 %}
 - [{{ post.title }}]({{ post.url }}) <small>({{ post.date | date: "%b %d, %Y" }})</small>
 {% endfor %}
+
+**[View All Articles →](/articles/)**

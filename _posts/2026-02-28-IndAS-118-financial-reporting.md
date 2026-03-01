@@ -33,7 +33,7 @@ The most noticeable changes will occur in the **Statement of Profit and Loss**, 
 **New Required Subtotals:**
 To enhance comparability, all companies must now present two new subtotals:
 
-* **Operating Profit or Loss**.
+* **Operating Profit or Loss**. This will be the profit or loss from the “Operating” category, excluding any financing and tax impacts.
 * **Profit or Loss before Financing and Income Taxes**.
 These subtotals will provide investors with a clearer picture of a company’s core operational performance, separate from financing and tax impacts.
 

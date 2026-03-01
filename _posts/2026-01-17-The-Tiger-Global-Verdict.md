@@ -24,8 +24,6 @@ The dispute traces back to one of India's most successful startup exits.
 * **The Claim:** Tiger Global claimed 0% capital gains tax under the India-Mauritius DTAA, arguing the investments were "grandfathered" (made before April 2017).
 * **The Result:** The Supreme Court overturned the Delhi High Court's favor, ruling the structure was an **"impermissible tax avoidance arrangement."**
 
-
-
 ---
 
 ## 2. Why the TRC Exemption was Disallowed
@@ -53,8 +51,6 @@ This case highlights how tax authorities now "look through" complex jurisdiction
 | **Mauritius** | **Treaty Shield** | The "Tax Home" on paper. SC ruled this was an artificial stop to access 0% tax. |
 | **Singapore** | **Holding Hub** | Where Flipkart was legally parented. SC applied "Indirect Transfer" rules. |
 | **India** | **Economic Source** | Where the actual value was created. SC ruled India has the primary right to tax. |
-
-
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mastering the Revenue Bridge: From Accounting to FP&A Strategy
+title: "Mastering the Revenue Bridge: From Accounting to FP&A Strategy"
 description: "A comprehensive guide to building a Revenue Bridge (Waterfall Analysis) using Price-Volume-Mix (PVM) analysis, transforming financial data into strategic insights for CFOs and FP&A professionals."
 date: 2026-02-08
 author: "CA Sakshi Jain"
@@ -48,6 +48,7 @@ This measures the revenue change from selling different quantities, valued at th
 
 >**PP{Revenue} + {Price Impact} + {Volume Impact} = CP_{Revenue}**
 
+---
 
 ## 3. Practical Case Study: The Tech Retailer
 

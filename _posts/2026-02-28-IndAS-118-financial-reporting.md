@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The New Era of Financial Reporting - Understanding Ind AS 118
+title: "The New Era of Financial Reporting - Understanding Ind AS 118"
 description: "A comprehensive guide to the upcoming Ind AS 118 standard, its impact on financial statement presentation, and what companies need to do to prepare for this significant change in financial reporting."
 date: 2026-02-28
 author: "CA Sakshi Jain"

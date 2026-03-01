@@ -616,8 +616,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 </style>
-
-  // Extract all unique tags
   function getAllTags() {
     const tagsSet = new Set();
     postsData.forEach(post => {

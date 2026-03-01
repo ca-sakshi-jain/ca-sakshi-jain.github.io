@@ -64,7 +64,7 @@ nav:
   - title: "Home"
     url: /
   - title: "Articles"
-    url: /#recent-posts
+    url: /articles/
   - title: "About"
     url: https://ca-sakshi-jain.github.io/ca-sakshi-jain/
   - title: "Contact"

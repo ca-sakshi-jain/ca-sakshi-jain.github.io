@@ -14,7 +14,7 @@ In the world of financial analysis, numbers alone don’t tell the full story. A
 
 As a Chartered Accountant, you are trained to ensure that revenue is accurate, compliant, and properly recognized. However, in the C-suite, the question is rarely **"Is the revenue correct?"**—it is **"Why did the revenue move?"**
 
-A **Revenue Bridge** (or **Waterfall Analysis**) is the definitive tool used by FP&A leaders to explain the variance between two points in time—usually **Budget vs. Actual** or **Year-over-Year (YoY)**. It moves the conversation from descriptive accounting to strategic insights.
+A **Revenue Bridge** (or **Waterfall Analysis**) is the definitive tool used by FP&A leaders to explain the variance between two points in time usually **Budget vs. Actual** or **Year-over-Year (YoY)**. It moves the conversation from descriptive accounting to strategic insights.
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "🏢 The Hidden Debt: Is Your Balance Sheet Ready for Ind AS 116?"
 description: "An in-depth look at lease accounting under Ind AS 116, the EBITDA illusion, and the strategic tension between audit compliance and FP&A decision-making."
-pubDate: 2026-01-20
+date: 2026-01-20
 author: "CA Sakshi Jain"
 tags: [Ind AS 116, IFRS 15, ASC 606, US GAAP, revenue recognition, performance obligations, contract assets, telecom accounting, bundled contracts, CFO insights, FP&A, audit, financial statements, global accounting standards, CA, CPA, ACCA]
 keywords: "revenue recognition, Ind AS 116, IFRS 15, ASC 606, performance obligations, contract assets, telecom accounting, CFO strategy, FP&A modeling, audit, chartered accountant, CPA, ACCA, global accounting standards"

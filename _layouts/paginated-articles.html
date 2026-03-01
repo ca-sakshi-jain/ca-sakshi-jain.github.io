@@ -1,0 +1,250 @@
+---
+layout: default
+---
+
+<div class="articles-container">
+  <h1>All Articles</h1>
+
+  <div class="articles-header">
+    {% if paginator.total_posts > 0 %}
+      <span id="resultsCount">Showing 
+        {% assign start = paginator.previous_page_path | default: 0 %}
+        {% if paginator.page == 1 %}
+          1
+        {% else %}
+          {% assign start = paginator.page | minus: 1 | times: 20 | plus: 1 %}
+          {{ start }}
+        {% endif %}
+        -
+        {% assign end = paginator.page | times: 20 %}
+        {% if end > paginator.total_posts %}
+          {{ paginator.total_posts }}
+        {% else %}
+          {{ end }}
+        {% endif %}
+        of {{ paginator.total_posts }} articles (Page {{ paginator.page }} of {{ paginator.total_pages }})
+      </span>
+    {% endif %}
+  </div>
+
+  <div class="articles-grid">
+    {% for post in paginator.posts %}
+      <article class="article-card">
+        <h3 class="article-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        
+        <div class="article-meta">
+          <time class="article-date">{{ post.date | date: "%B %d, %Y" }}</time>
+          <span class="article-author">by {{ post.author }}</span>
+        </div>
+        
+        <p class="article-description">{{ post.description }}</p>
+        
+        <div class="article-tags">
+          {% assign topTags = post.tags | slice: 0, 3 %}
+          {% for tag in topTags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+          {% if post.tags.size > 3 %}
+            <span class="tag-more">+{{ post.tags.size | minus: 3 }} more</span>
+          {% endif %}
+        </div>
+        
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="pagination-section">
+    <div class="pagination-controls">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a href="/articles/page/" class="page-btn">← Previous</a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}" class="page-btn">← Previous</a>
+        {% endif %}
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="page-number current">{{ page }}</span>
+        {% else %}
+          {% if page == 1 %}
+            <a href="/articles/page/" class="page-btn">{{ page }}</a>
+          {% else %}
+            <a href="/articles/page/{{ page }}/" class="page-btn">{{ page }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="page-btn">Next →</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+.articles-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.articles-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.articles-header {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.articles-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.article-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  background: white;
+}
+
+.article-card:hover {
+  border-color: #0366d6;
+  box-shadow: 0 3px 12px rgba(3, 102, 214, 0.1);
+}
+
+.article-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.article-title a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.article-description {
+  margin: 1rem 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  background: #f1f3f5;
+  color: #495057;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #dee2e6;
+}
+
+.tag-more {
+  padding: 0.35rem 0.7rem;
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.read-more {
+  display: inline-block;
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.pagination-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  color: #0366d6;
+}
+
+.page-btn:hover {
+  background: #0366d6;
+  color: white;
+  border-color: #0366d6;
+}
+
+.page-number {
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  min-width: 2.5rem;
+}
+
+.page-number.current {
+  background: #0366d6;
+  color: white;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .article-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .pagination-controls {
+    gap: 0.25rem;
+  }
+
+  .page-btn, .page-number {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+</style>

@@ -311,8 +311,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
 .articles-container {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
+}
+
+.articles-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .search-filter-top {
@@ -611,33 +616,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // All posts data
-  const postsData = [
-    {% for post in site.posts %}
-    {
-      title: {{ post.title | jsonify }},
-      url: {{ post.url | jsonify }},
-      date: {{ post.date | date: "%B %d, %Y" | jsonify }},
-      author: {{ post.author | jsonify }},
-      description: {{ post.description | jsonify }},
-      tags: {{ post.tags | jsonify }},
-      dateObj: new Date({{ post.date | date: "%Y" }}, {{ post.date | date: "%m" | minus: 1 }}, {{ post.date | date: "%d" }})
-    }{{ unless forloop.last }},{{ endunless }}
-    {% endfor %}
-  ];
-
-  // State management
-  const state = {
-    allPosts: postsData.sort(function(a, b) { return b.dateObj - a.dateObj; }),
-    filteredPosts: [],
-    selectedTags: new Set(),
-    searchQuery: '',
-    currentPage: 1,
-    itemsPerPage: 5
-  };
 
   // Extract all unique tags
   function getAllTags() {

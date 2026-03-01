@@ -4,7 +4,7 @@ title: "The New Era of Financial Reporting - Understanding Ind AS 118"
 description: "A comprehensive guide to the upcoming Ind AS 118 standard, its impact on financial statement presentation, and what companies need to do to prepare for this significant change in financial reporting."
 date: 2026-02-28
 author: "CA Sakshi Jain"
-categories: accounting standards
+categories: [accounting, financial-reporting, accounting standards]
 tags: [Ind AS 118, IFRS 18, financial reporting, profit and loss presentation, operating profit, investing category, financing category, income taxes category, discontinued operations, management performance measures, MPMs, financial statement comparability, audit disclosure requirements, financial statements, global accounting standards, CA, CPA, ACCA]
 ---
 

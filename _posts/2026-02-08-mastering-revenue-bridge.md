@@ -4,7 +4,7 @@ title: "Mastering the Revenue Bridge: From Accounting to FP&A Strategy"
 description: "A comprehensive guide to building a Revenue Bridge (Waterfall Analysis) using Price-Volume-Mix (PVM) analysis, transforming financial data into strategic insights for CFOs and FP&A professionals."
 date: 2026-02-08
 author: "CA Sakshi Jain"
-categories: [FP&A, accounting, financial-reporting, financial-planning-and-analysis]
+categories: [financial-planning-and-analysis]
 tags: [revenue bridge, waterfall analysis, price-volume-mix, PVM, financial analysis, FP&A strategy, CFO insights, Excel modeling, financial storytelling, variance analysis, budget vs actual, YoY analysis, financial reporting, global accounting standards, CA, CPA, ACCA]
 ---
 
